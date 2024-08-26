@@ -7,26 +7,155 @@
 </head>
 <body>
     <main>
-            <!-- INPUTS -->
-                <!-- Propriedades (name, type, value) -->
-                <!-- text -->
-                <!-- password -->
-                <!-- email -->
-                <!-- number -->
-                <!-- checkbox -->
-                <!-- date -->
-                <!-- time -->
-                <!-- file -->
-                <!-- url -->
         <h1>Formulários</h1>
         <hr>
 
-        <form>
+        <form  action="" method="">
+            <!-- Propriedades (name, type, value) -->
+            <!-- text -->
             <div>
                 <label for="texto">Input de texto:</label>
                 <input type="text" id="texto">
             </div>
+
+            <div>
+                <label for="texto">Input de texto:</label>
+                <input type="text" id="texto" placeholder="Informe seu nome..">
+            </div>
+
+            <div>
+                <label for="texto">Input de texto:</label>
+                <input type="text" id="texto" value="Narcelio">
+            </div>
+
+            <div>
+                <label for="texto">Nome:</label>
+                <input type="text" id="texto" name="nome">
+            </div>
+
+            <!-- password -->
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="nome">
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="password" id="email" name="email">
+            </div>
+
+            <!-- date -->
+            <div>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <!-- time -->
+            <div>
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+
+            <!-- number -->
+            <div>
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+
+            <!-- file -->
+            <div>
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </div>
+
+            <!-- url -->
+            <div>
+                <label for="url">Url:</label>
+                <input type="url" id="url" name="url">
+            </div>
+
+            <!-- color -->
+            <div>
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" name="cor">
+            </div>
+
+            <!-- range -->
+            <div>
+                <label for="barra">De 0 a 100:</label>
+                <input type="range" id="barra" name="barra">
+            </div>
+
+            <div>
+                <label for="barra">De 0 a 100:</label>
+                <input type="range" id="barra" name="barra" value="100">
+            </div>
+
+            <div>
+                <label for="barra">De 0 a 100:</label>
+                <input type="range" id="barra" name="barra" value="100" max="500">
+            </div>
+
+            <div>
+                <label for="barra">De 0 a 100:</label>
+                <input type="range" id="barra" name="barra" value="100" max="500" min="100">
+            </div>
+
+            <!-- checkbox -->
+            <!-- Mais de uma seleção -->
+            <div>
+                <label for="checkbox">Horário:</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+
+            <div>
+                <label for="checkbox">Horário:</label>
+                <input type="checkbox" id="checkbox" name="checkbox" checked>
+            </div>
+            <!-- Uma seleção -->
+            <div>
+                <label for="radio">Escolha uma opção:</label>
+                <input type="radio" id="radio" name="radio">
+            </div>
+
+            <!-- reset -->
+            <div>
+                <!-- <label for="reset"></label> -->
+                <input type="reset" id="reset" name="reset">
+            </div>
+
+            <div>
+                <!-- <label for="limpar"></label> -->
+                <input type="reset" id="limpar" name="limpar" value="Limpar">
+            </div>
+
+            <!-- select -->
+            <div>
+                <select name="select" id="select">
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                    <option value="transferencia">Transferência</option>
+                </select>
+            </div>
+
+            <div>
+                <select name="select" id="select">
+                    <option value="" disabled selected>Selecione uma das opções...</option>
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                    <option value="transferencia">Transferência</option>
+                </select>
+            </div>
             
+            <!-- textarea -->
+             <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+            <!-- submit -->
+            <div>
+                <!-- <label for="enviar"></label> -->
+                <input type="submit" id="enviar" name="enviar" value="Enviar">
+            </div>
         </form> 
     </main>
 </body>

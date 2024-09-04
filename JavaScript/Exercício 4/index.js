@@ -1,8 +1,12 @@
-// Personegem 1
-const nomeDoPoder = prompt ('Informe o nome do poder do personagem:')
+//Atacante
+const atacante = prompt ('Qual é o nome do personagem atacante?')
+const poderDeAtaque = parseFloat(prompt('Qual é o poder de ataque do ' + atacante + '?'))
 
-const poderDeAtaque = parseFloat(prompt('Qual é o poder de ataque do ' + nomeDoPersonagem1 + '?'))
+// Defensor
 
-const nomeDoPersonagem1 = prompt ('Informe o nome do personagem:')
+const defensor = prompt ('Qual é o nome do personagem?')
+let pontosDeVida = parseFloat(prompt('quantos pontos de vida o' + defensor + 'possui?')) 
+const poderDeDefesa = parseFloat(prompt('qual é o seu poder de defesa?'))
+const possuiEscudo = prompt('Ele possui um escudo? (Sim/Não)')
 
-const PontosDeVida = parseFloat(prompt('quantos pontos de vida o' + nomeDoPersonagem1 + 'tem?')) 
+let danoCausado = 0

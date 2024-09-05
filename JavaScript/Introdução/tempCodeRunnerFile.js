@@ -1,13 +1,3 @@
-// OPERADORES
-/*
-Aritméticos +, -, *, / e %
-Agrupamento ()
-Atribuição =, +=, -=, *=, /=, e %=
-Encadeamento .
-Incrementar ++ e Decrementar --
-*/
-// EXPRESSÕES
-
 const nota1 = 10;
 const nota2 = 8;
 

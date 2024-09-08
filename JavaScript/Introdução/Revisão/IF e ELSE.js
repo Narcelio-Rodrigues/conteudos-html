@@ -4,6 +4,12 @@ let operacao = prompt('Qual operação matemática você deseja realizar com os 
 
 let resultado;
 
+/*
+   if -> SE
+   else if -> SENÃO SE
+   else -> OUTRO
+*/
+
 if (operacao === '+') {
    resultado = x + y;
 } else if(operacao === '-') {

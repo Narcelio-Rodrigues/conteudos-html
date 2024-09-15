@@ -12,9 +12,10 @@
         }
     </style>
 </head>
+
 <body>
     <main>
-        <!-- Document Object Model -->
+        <!-- Document Object Model (Modelo de objeto de documento) -->
         <h1>Iniciando estudos DOM</h1>
         <p>Aqui vai o resultado</p>
         <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
@@ -22,6 +23,19 @@
     </main>
 
     <script>
+        /*
+        SELECIONANDO
+        - por Marca
+            getElementsByTagName()
+        - por ID
+        - por Nome
+        - por Classe
+            getElementsByClassName()
+        - por Seletor   
+            querySelector()
+            querySelectorAll()
+        */
+
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('Está escrito assim: ' + p1.innerText)
         var d = window.document.getElementById('msg')

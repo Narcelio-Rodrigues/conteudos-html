@@ -20,27 +20,48 @@
         <p>Aqui vai o resultado</p>
         <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
         <div id="msg">Clique em mim</div>
+        <div name="msgs">Clique em mim</div>
+        <div class="m">Clique em mim</div>
     </main>
 
     <script>
         /*
         SELECIONANDO
-        - por Marca
-            getElementsByTagName()
-        - por ID
-        - por Nome
+        
+        
+        
         - por Classe
             getElementsByClassName()
-        - por Seletor   
-            querySelector()
-            querySelectorAll()
+        
         */
-
+        
+        // - por Marca
+        //     getElementsByTagName()
+        var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('Está escrito assim: ' + p1.innerText)
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+
+        // - por ID
+        //     getElementById()
         var d = window.document.getElementById('msg')
-        d.style.background = 'black'
+        d.style.background = 'green'
         d.innerText = 'Estou aguardando...'
+        // window.document.getElementById('msg').innerText = 'Tudo bem?'
+
+
+        // - por Nome
+        //     getElementsByName()
+        var a = window.document.getElementsByName('msgs')
+        d.innerText = 'Olá, peixe'
+
+
+        // - por Seletor   
+        //       querySelector()
+        //       querySelectorAll()
+        var x = window.document.querySelector('div#m')
+        x.style.background = 'yellow'
     </script>
 </body>
 </html>

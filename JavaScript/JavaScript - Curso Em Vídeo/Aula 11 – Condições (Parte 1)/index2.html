@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Identificação</title>
+</head>
+<body>
+    <h1>Sistema de Identificação</h1>
+    <input type="text" name="ind" id="indent">
+    <input type="button" value="Identificar" onclick="identificar()">
+    <div id="res"></div>
+    
+    <script>
+        function identificar () {
+            var pais = window.document.getElementById('indent')
+            // var resultado = window.document.getElementById('res')
+            var vel = pais.value
+        
+            res.innerHTML = `Vivendo em <strong>${vel}</strong><br>`
+            if (vel == 'Brasil') {
+                res.innerHTML += `Você é Brasileiro!`
+            } else {
+                res.innerHTML += `Você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>

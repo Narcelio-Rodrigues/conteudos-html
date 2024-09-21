@@ -7,21 +7,24 @@
 </head>
 <body>
     <h1>Sistema de Identificação</h1>
-    <input type="text" name="ind" id="indent">
+    <input type="text" name="ind" id="ident">
     <input type="button" value="Identificar" onclick="identificar()">
     <div id="res"></div>
     
     <script>
         function identificar () {
-            var pais = window.document.getElementById('indent')
-            // var resultado = window.document.getElementById('res')
-            var vel = pais.value
+            var pais = window.document.getElementById('ident');
+            var resultado = window.document.getElementById('res');
+            var vel = pais.value.trim().toLowerCase(); //Remove espaços '.trim()' e converte para caixa baixa '.toLowerCase()'
         
-            res.innerHTML = `Vivendo em <strong>${vel}</strong><br>`
-            if (vel == 'Brasil') {
-                res.innerHTML += `Você é Brasileiro!`
+            resultado.innerHTML = `Vivendo em <strong>${vel}</strong><br>`; //Mostra o valor original do input
+
+            if (vel === '') { //Verifica se o campo está vazio
+                resultado.innerHTML = `Por favor, digite o nome de um país.`;
+            } else if (vel === 'brasil') {
+                resultado.innerHTML += `Você é Brasileiro!`;
             } else {
-                res.innerHTML += `Você é Estrangeiro!`
+                resultado.innerHTML += `Você é Estrangeiro!`;
             }
         }
     </script>

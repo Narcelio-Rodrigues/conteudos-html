@@ -7,7 +7,10 @@
 </head>
 <body>
     <main>
-        <form action="">
+        <h1>Formulário de Inscrição</h1>
+
+        <form>
+            <!-- Nome, E-mail e WhatsApp -->
             <label for="nome">Nome:</label>
             <input type="text" id="nome">
             <br><br>
@@ -16,26 +19,39 @@
             <input type="email" id="email1">
             <br><br>
 
-            <label for="WhatsApp">E-mail:</label>
+            <label for="WhatsApp">WhatsApp:</label>
             <input type="number" id="WhatsApp">
             <br><br>
             
+            <!-- Área de atuação -->
             <label>Área de atuação:</label>
-            <input type="radio" id="dev" value="dev">
+            <br>
+            <input type="radio" id="dev" value="dev" name="area">
             <label for="dev">Desenvolvimento</label>
             
-            <input type="radio" id="qa" value="qa">
+            <input type="radio" id="qa" value="qa" name="area">
             <label for="qa">Quality Assurance (QA)</label>
 
-            <input type="radio" id="AD" value="AD">
+            <input type="radio" id="AD" value="AD" name="area">
             <label for="AD">Análise de Dados</label>
 
-            <input type="radio" id="infra" value="infra">
+            <input type="radio" id="infra" value="infra" name="area">
             <label for="infra">Infraestrutura</label>
-
             <br><br>
 
+            <!-- Espaço Reservado -->
+            <label for="obs.:">Observações:</label>
+            <br>
+            <textarea name="observacao" id="obs.:" cols="50" rows="5" placeholder="Adicione suas Observações..."></textarea>
+            <br>
 
+            <!-- Checkbox de confirmação de E-mail -->
+            <label for="receber">Desejo receber novidades e ofertas por email.</label>
+            <input type="checkbox" id="receber">
+            <br>
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar</button>
         </form>
     </main>
 </body>

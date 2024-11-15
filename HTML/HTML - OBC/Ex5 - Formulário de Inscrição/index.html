@@ -11,47 +11,70 @@
 
         <form>
             <!-- Nome, E-mail e WhatsApp -->
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
-            <br><br>
-
-            <label for="email1">E-mail:</label>
-            <input type="email" id="email1">
-            <br><br>
-
-            <label for="WhatsApp">WhatsApp:</label>
-            <input type="number" id="WhatsApp">
-            <br><br>
+             <div>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome" required>
+             </div>
             
-            <!-- Área de atuação -->
-            <label>Área de atuação:</label>
             <br>
-            <input type="radio" id="dev" value="dev" name="area">
-            <label for="dev">Desenvolvimento</label>
+
+            <div>
+                <label for="email1">E-mail</label><br>
+                <input type="email" id="email1" name="email" required>
+            </div>
             
-            <input type="radio" id="qa" value="qa" name="area">
-            <label for="qa">Quality Assurance (QA)</label>
-
-            <input type="radio" id="AD" value="AD" name="area">
-            <label for="AD">Análise de Dados</label>
-
-            <input type="radio" id="infra" value="infra" name="area">
-            <label for="infra">Infraestrutura</label>
-            <br><br>
-
-            <!-- Espaço Reservado -->
-            <label for="obs.:">Observações:</label>
-            <br>
-            <textarea name="observacao" id="obs.:" cols="50" rows="5" placeholder="Adicione suas Observações..."></textarea>
             <br>
 
-            <!-- Checkbox de confirmação de E-mail -->
-            <label for="receber">Desejo receber novidades e ofertas por email.</label>
-            <input type="checkbox" id="receber">
+            <div>
+                <label for="WhatsApp">WhatsApp</label><br>
+                <input type="tel" id="WhatsApp" name="WhatsApp" required>
+            </div>
+            
+            <br>
+            
+            <div>
+                <!-- Área de atuação -->
+                <label>Área de atuação:</label>
+                <br>
+                <input type="radio" id="dev" value="dev" name="area" required>
+                <label for="dev">Desenvolvimento</label>
+                
+                <input type="radio" id="qa" value="qa" name="area" required>
+                <label for="qa">Quality Assurance (QA)</label>
+
+                <input type="radio" id="AD" value="AD" name="area" required>
+                <label for="AD">Análise de Dados</label>
+
+                <input type="radio" id="infra" value="infra" name="area" required>
+                <label for="infra">Infraestrutura</label>
+            </div>
+            
             <br>
 
-            <!-- Botão de envio -->
-            <button type="submit">Enviar</button>
+            <div>
+                <!-- Espaço Reservado -->
+                <label for="obs.:">Observações</label>
+                <br>
+                <textarea name="observacao" id="obs.:" cols="50" rows="5" placeholder="Adicione suas Observações..."></textarea>
+                <br> 
+            </div>
+            
+            <br>
+
+            <div>
+                <!-- Checkbox de confirmação de E-mail -->
+                <input type="checkbox" id="receber" required>
+                <label for="receber">Desejo receber novidades e ofertas por email.</label>
+                
+                <br>
+            </div>
+            
+            <br>
+
+            <div>
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </main>
 </body>

@@ -4,8 +4,9 @@
 }
 
 h1 {
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 20px;
 }
 
 li {
@@ -14,7 +15,20 @@ li {
 }
 
 li {
+    height: 150px;
+    width: 250px;
     display: inline-block;
-    margin: 50px 10px 15px 50px;
-    padding: 50px 10px 15px 50px;
+    margin: 20px;
+    padding: 30px 150px 150px 50px;
+    border: 10px solid #000000;
+    
+}
+
+.selected {
+    background-color: #3b3a42;
+    border: 10px solid #7469d4;
+}
+
+.hidden {
+    display: none;
 }

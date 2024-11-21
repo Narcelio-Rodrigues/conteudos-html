@@ -16,7 +16,9 @@ header {
   }
   
   p {
-      font-family: sans-serif;
+      /* font-family: sans-serif; */
+      font-family: "Montserrat", serif;
+
   }
   
   .bold {

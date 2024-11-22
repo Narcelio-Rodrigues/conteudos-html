@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.box {
+    border: 1px solid #232323;
+    display: inline-block;
+    margin-top: 20px;
+    width: 75px;
+}

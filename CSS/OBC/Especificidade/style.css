@@ -5,3 +5,7 @@ body > h1 {
 h1 {
     color:blueviolet;
 }
+
+h1 {
+    color: #f00 !important;
+}

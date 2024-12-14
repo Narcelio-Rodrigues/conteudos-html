@@ -34,7 +34,8 @@ header > nav > ul > li > a {
 
 .button {
     background-color: var(--color-orange);
-    color: var(--color-white);
+    color: var(--color-background);
+    font-weight: bold;
     padding: 0.5rem;
     margin: 1rem;
     border-radius: 0.4rem;
@@ -43,7 +44,7 @@ header > nav > ul > li > a {
 
 #cardapio {
     padding: 5vh;
-    background-color: #e68d27;
+    /* background-color: #e68d27; */
 }
 
 #cardapio > h2 {
@@ -72,4 +73,15 @@ article > header > img {
 article > main {
     padding: 0.5rem;
     margin: 1rem;
+}
+
+#contato {
+    background-color: #e68d27;
+    padding: 5rem;
+}
+
+footer {
+    background-color: var(--color-background);
+    color: var(--color-orange);
+    padding: 2rem;
 }

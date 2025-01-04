@@ -1,12 +1,15 @@
-const primeiroNome = prompt('Infome o primeiro nome do recruta:')
-const sobrenome = prompt('Informe o sobrenoome do recruta:')
-const campoDeEstudo = prompt('Qual é o campo de estudo do recruta?')
-const anoDeNAscimento = prompt('Qual é o ano de nascimento do recruta?')
+const primeiroNome = prompt ('Informe seu primeiro nome:');
+const sobrenome = prompt ('Informe seu sobrenome:');
+const campoDeEstudos = prompt ('Informe seu Campo de Estudos:');
+const anoDeNascimento = prompt ('Informe seu ano de nascimento:');
 
-// 'alert' Para exibir uma caixa de diálogo pop-up com uma mensagem(string) para o usuário.
+let anoAtual = 2024;
+let ano = anoAtual - anoDeNascimento;
 
-// '\n' Para pular linha dentro de uma string.
 alert(
-    'Recruta cadastrado com sucesso!\n' + 
-    '\nNome completo: ' + primeiroNome + " " + sobrenome + '\nCampo de estudo: ' + campoDeEstudo + '\nIdade: ' + (2024 - anoDeNAscimento)
-)
+    'RESULTADOS:\n' +
+    '\nPrimeiro Nome: ' + primeiroNome +
+    '\nSobrenome: ' + sobrenome +
+    '\nCampo De Estudos: ' + campoDeEstudos +
+    '\nIdade: ' + idade 
+);

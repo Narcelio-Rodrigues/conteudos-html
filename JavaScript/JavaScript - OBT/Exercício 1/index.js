@@ -1,15 +1,11 @@
-const primeiroNome = prompt ('Informe seu primeiro nome:');
-const sobrenome = prompt ('Informe seu sobrenome:');
-const campoDeEstudos = prompt ('Informe seu Campo de Estudos:');
-const anoDeNascimento = prompt ('Informe seu ano de nascimento:');
-
-let anoAtual = 2024;
-let ano = anoAtual - anoDeNascimento;
+const primeiroNome = prompt ('Informe seu primeiro nome:')
+const sobrenome = prompt ('Informe seu sobrenome:')
+const campoDeEstudo = prompt ('Informe seu Campo de Estudo:')
+const anoDeNascimento = prompt ('Informe seu ano de nascimento:')
 
 alert(
-    'RESULTADOS:\n' +
-    '\nPrimeiro Nome: ' + primeiroNome +
-    '\nSobrenome: ' + sobrenome +
-    '\nCampo De Estudos: ' + campoDeEstudos +
-    '\nIdade: ' + idade 
+    'RECRUTA CADASTRADO COM SUCESSO!\n' +
+    '\nNome Completo: ' + primeiroNome + ' ' + sobrenome +
+    '\nCampo De Estudo: ' + campoDeEstudo +
+    '\nIdade: ' + (2024 - anoDeNascimento)
 );

@@ -1,20 +1,18 @@
-const entrada1 = prompt("Informe o primeiro número:")
-const entrada2 = prompt("Informe o segundo número:")
-//'prompt' é usada para exibir uma caixa de diálogo que solicita ao usuário a entrada de uma valor.
+const valor1 = prompt ('Insira o primeiro valor:');
+const valor2 = prompt ('Insira o seegundo valor:');
 
-//'parseFloat' é uma função usada para converter uma string em um número de ponto flutuante(número decimal).
-const x = parseFloat(entrada1) 
-const y = parseFloat(entrada2)
+const x = parseFloat(valor1);
+const y = parseFloat(valor2);
 
-const soma = x + y
-const subtracao = x - y
-const multiplicacao = x * y
-const divisao = x / y
+const soma = x + y;
+const subtracao = x - y;
+const divisao = x / y;
+const multiplicacao = x * y;
 
 alert(
-    'Resultados:\n' +
-    '\nSoma: ' + soma + 
-    '\nSubtração: ' + subtracao + 
-    '\nMultiplicação: ' + multiplicacao +
-    '\nDivisão: ' + divisao
-)
+'RESULTADOS\n' +
+'\nSoma: ' + soma +
+'\nsubtração:  ' + subtracao +
+'\nDivisão: ' + divisao +
+'\nMultiplicação: ' + multiplicacao
+);

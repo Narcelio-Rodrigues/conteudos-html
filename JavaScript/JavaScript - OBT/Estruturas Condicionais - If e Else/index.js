@@ -56,7 +56,13 @@ Sintaxe:
 const resultado = condicao ? resultado_verdadeiro : resultado_falso
 */
 
-// exemplo
-const resultado = (6 === 6) ? "Verdadeiro" : "Falso"
+/* exemplo
+ const resultado = (6 === 6) ? "Verdadeiro" : "Falso"
+ 
+ console.log(resultado)
 
-console.log(resultado)
+*/
+
+// EXEMPLO:
+const idade = prompt ('Informe a sua idade:');
+const maiorIdade = (idade > 18) ? alert ('Você é maior de idade') : alert ('Você é menor de idade.' + '\nAcesso Negado!')

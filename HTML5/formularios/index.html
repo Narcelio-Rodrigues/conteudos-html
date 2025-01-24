@@ -22,7 +22,7 @@
         <form>
             <!-- Campo de texto -->
              <label for="nome">Nome:</label>
-             <input type="text" id="nome" name="nome" required>
+             <input type="text" id="nome" name="nome" required placeholder="Ex.: João Silva">
              <br><br>
 
             <!-- Campo de email -->
@@ -64,7 +64,24 @@
             <label for="fotoPerfil">Foto de Perfil:</label>
             <input type="file" id="fotoPerfil" name="fotoPerfil">
             <br><br>
+            
+            <!-- Campo de caixa de seleção -->
+            <label for="situacao">Situação Atual:</label>
+            <select name="situacao" id="situacao">
+                <option value="" selected disabled>Selecione uma das opções...</option>
+                <option value="estudante">Estudando para me tornar um programador</option>
+                <option value="estagiario">Atuando como estagiário/trainee</option>
+                <option value="junior">Atuando como desenvolvedor júnior</option>
+                <option value="pleno">Atuando como desenvolvedor pleno</option>
+                <option value="senior">Atuando como desenvolvedor sênior</option>
+            </select>
+            <br><br>
 
+            <!-- Campo de área de texto de múltiplas linhas -->
+            <label for="sobre">Sobre mim:</label>
+            <textarea name="sobre" id="sobre" cols="40" rows="6" placeholder="Fale um pouco sobre você..."></textarea>
+
+            <!-- Botão de envio -->
             <button type="submit">Enviar</button>
         </form>
     </main>

@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px;
+}
+
+li {
+    background-color: rgb(40, 39, 39);
+    color: rgb(238, 244, 249);
+    display: inline-block;
+    margin: 50px;
+}

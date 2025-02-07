@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #3498db;
+    --cor-segundaria: #2ecc71;
+    --cor-texto: #333;
+    --cor-texto-segundaria: #fff;
+    --cor-fundo: #f4f4f4;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background: var(--cor-primaria);
+    color: var(--cor-texto-segundaria);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    margin: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: var(--cor-texto-segundaria);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.banner {
+    text-align: center;
+    padding: 40px;
+    background: var(--cor-segundaria);
+    color: var(--cor-texto-segundaria);
+}
+
+.banner h2, .banner p, .banner button{
+    margin: 10px;
+}
+
+button {
+    background: var(--cor-primaria);
+    color: var(--cor-texto-segundaria);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1); /* Aumenta um pouco o botão */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--cor-texto-segundaria);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    background: var(--cor-primaria);
+    color: var(--cor-texto-segundaria);
+    text-align: center;
+    padding: 10px;
+}

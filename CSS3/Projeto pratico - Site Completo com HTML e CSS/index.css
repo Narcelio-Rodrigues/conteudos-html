@@ -65,4 +65,17 @@ a {
 
 .section__img, .section__img-inline {
     border-radius: .75rem;
+    /* eixo x, eixo y, blur, expansão/recuo, cor */
+    box-shadow: 0 1rem 2rem -0.5rem rgba(20, 116, 180, 0.25);
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    max-height: 30rem;
+    width: 100%;
+}
+
+.section__text, .section__text-inline {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin: 4rem auto;
 }

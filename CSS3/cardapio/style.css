@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
 }
 
 :root {
-    --cor-texto-preto: #2e1401;
+    --cor-texto-preto: #0a0a09;
     --cor-texto-branco: #ffffff;
     --cor-branco-fundo: #f0eeee;
     --cor-destaque: #ebb61a;
@@ -28,6 +32,27 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+main .cta {
+    background-color: var(--cor-destaque);
+    color: #2e1401;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    transition: color 0.3s ease, background-color 0.5s ease-out;
+}
+
+main .cta:hover {
+    background-color: var(--cor-texto-preto);
+    color: var(--cor-destaque);
 }
 
 #home * {
@@ -46,34 +71,95 @@ nav ul li a {
     font-weight: lighter;
 }
 
-#home a {
+#home p {
+    margin-bottom: 30px;
+}
+
+/* #home a {
     background-color: var(--cor-destaque);
     color: #2e1401;
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
     padding: 12px 20px;
+    transition: color 0.3s ease, background-color 0.5s ease-out;
 }
 
+#home a:hover {
+    background-color: var(--cor-texto-preto);
+    color: var(--cor-destaque);
+} */
+
 #cardapio {
-    background-color: #f1d69e;
     text-align: center;
     padding: 50px;
 }
 
 #cardapio h2 {
-    margin: 20px;
+    margin: 50px;
+    font-weight: 700;
+    font-size: 2.5rem;
 }
 
 .card {
     background-color: var(--cor-branco-fundo);
     display: inline-block;
+    margin: 25px;
     border-radius: 15px;
-    width: 640px;
-    height: 500px;
+    height: 26rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto-preto);
+    cursor: pointer;
 }
 
 .card img {
+    width: 25rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.card h3, .card p{
+    text-align: left;
+    margin: 1rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    max-width: 350px;
+}
+
+#sobre-nos {
+    background-image: url(img/pexels-eneida-nieves-905847.jpg);
+    background-position: center;
+    color: var(--cor-texto-branco);
+    text-align: center;
+    padding: 60px;
+}
+
+#sobre-nos h4 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#sobre-nos p {
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+#contato {
+    text-align: center;
+    padding: 80px;
+}
+
+footer {
+    background-color: var(--cor-texto-preto);
+    color: var(--cor-destaque);
+    text-align: center;
+    padding: 1.5rem;
+    word-spacing: 1px;
 }

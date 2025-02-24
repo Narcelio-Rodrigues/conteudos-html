@@ -153,7 +153,39 @@ main .cta:hover {
 
 #contato {
     text-align: center;
-    padding: 80px;
+    padding: 60px;
+    margin: 10px;
+    height: 210px;
+}
+
+#contato > h5 {
+    font-size: 2rem;
+}
+
+#contato > p {
+    margin: 10px;
+}
+
+#contato .endereco, #contato .telE, #contato .horario {
+    display: inline-block;
+    margin: 2rem 0.9rem;
+    text-align: left;
+}
+
+#contato .endereco {
+    max-width: 360px;
+}
+
+#contato .telE a {
+    color: var(--cor-destaque);
+}
+
+#contato .horario {
+    max-width: 450px; 
+}
+
+#contato .cta {
+    margin: 40rem;
 }
 
 footer {

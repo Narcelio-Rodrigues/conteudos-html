@@ -1,197 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #ebb61a;
+    --color-dark: #232323;
+    --color-light: #eaeaea;
+    --color-white: #fff;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-:root {
-    --cor-texto-preto: #0a0a09;
-    --cor-texto-branco: #ffffff;
-    --cor-branco-fundo: #f0eeee;
-    --cor-destaque: #ebb61a;
+a {
+    color: var(--color-primary);
+}
+
+header {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1.5rem 0;
 }
 
 nav ul {
-    background-color: var(--cor-texto-preto);
-    text-align: center;
     list-style: none;
-    padding: 1.5rem;
+    text-align: center;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+nav li {
+    display: inline;
+    margin: 0 1.5rem;
 }
 
-nav ul li a {
-    color: var(--cor-texto-branco);
+nav a {
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
+    font-weight: 700;
+    color: var(--color-white);
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: var(--cor-destaque);
+nav a:hover {
+    color: var(--color-primary);
 }
 
-main .cta {
-    background-color: var(--cor-destaque);
-    color: #2e1401;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 12px 20px;
-    transition: color 0.3s ease, background-color 0.5s ease-out;
-}
-
-main .cta:hover {
-    background-color: var(--cor-texto-preto);
-    color: var(--cor-destaque);
-}
-
-#home * {
-    margin: 20px;
-}
-
-#home {
-    padding: 15rem;
-    text-align: center;
+.hero {
     background-image: url(img/pexels-narda-yescas-1566837.jpg);
-    filter: brightness(0.9);
-    color: var(--cor-texto-branco);
-}
-#home h1 {
-    font-size: 3rem;
-    font-weight: lighter;
-}
-
-#home p {
-    margin-bottom: 30px;
-}
-
-/* #home a {
-    background-color: var(--cor-destaque);
-    color: #2e1401;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 12px 20px;
-    transition: color 0.3s ease, background-color 0.5s ease-out;
-}
-
-#home a:hover {
-    background-color: var(--cor-texto-preto);
-    color: var(--cor-destaque);
-} */
-
-#cardapio {
+    background-size: cover;
+    color: var(--color-white);
+    min-width: 75vh;
+    padding: 10rem 0;
     text-align: center;
-    padding: 50px;
 }
 
-#cardapio h2 {
-    margin: 50px;
-    font-weight: 700;
-    font-size: 2.5rem;
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 100;
 }
 
-.card {
-    background-color: var(--cor-branco-fundo);
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.cta {
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    color: var(--color-dark);
     display: inline-block;
-    margin: 25px;
-    border-radius: 15px;
-    height: 26rem;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
 }
 
-.card:hover {
-    background-color: var(--cor-destaque);
-    color: var(--cor-texto-preto);
-    cursor: pointer;
+section:not(#home) {
+    padding: 4rem;
+    text-align: center;
 }
 
-.card img {
-    width: 25rem;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
-.card h3, .card p{
+p {
+    font-size: 1.25rem;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list > li {
+    background-color: var(--color-light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 1.5rem;
+    height: 28rem;
+    width: 28rem;
     text-align: left;
-    margin: 1rem;
+    transition: background-color 0.5s ease-out;
 }
 
-.card p {
-    font-size: 1.1rem;
-    max-width: 350px;
+.menu-list > li:hover {
+    background-color: var(--color-primary);
+}
+
+.menu-list img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu-list h3, .menu-list p {
+    padding: 1rem 1.25rem 0;
 }
 
 #sobre-nos {
-    background-image: url(img/pexels-eneida-nieves-905847.jpg);
-    background-position: center;
-    color: var(--cor-texto-branco);
-    text-align: center;
-    padding: 60px;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("img/pexels-eneida-nieves-905847.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
 }
 
-#sobre-nos h4 {
-    font-size: 2rem;
-    margin: 10px;
+address {
+    margin: 2rem 0;
 }
 
-#sobre-nos p {
-    font-size: 1.1rem;
-    margin-top: 30px;
-}
-
-#contato {
-    text-align: center;
-    padding: 60px;
-    margin: 10px;
-    height: 210px;
-}
-
-#contato > h5 {
-    font-size: 2rem;
-}
-
-#contato > p {
-    margin: 10px;
-}
-
-#contato .endereco, #contato .telE, #contato .horario {
+address > * {
     display: inline-block;
-    margin: 2rem 0.9rem;
+    margin: 1.5rem;
     text-align: left;
 }
 
-#contato .endereco {
-    max-width: 360px;
-}
-
-#contato .telE a {
-    color: var(--cor-destaque);
-}
-
-#contato .horario {
-    max-width: 450px; 
-}
-
-#contato .cta {
-    margin: 40rem;
-}
-
 footer {
-    background-color: var(--cor-texto-preto);
-    color: var(--cor-destaque);
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    padding: 2rem;
     text-align: center;
-    padding: 1.5rem;
-    word-spacing: 1px;
 }

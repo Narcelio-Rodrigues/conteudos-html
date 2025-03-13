@@ -14,12 +14,18 @@
 </head>
 <body>
     <h1>Iniciando estudos DOM</h1>
-    <p>Aqui vai o resultado</p>
+    <p>Aqui vai o <strong>resultado</strong></p>
     <P>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</P>
     <div>Clique em mim</div>
 
     <script>
-
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var corpo = window.document.body
+        window.document.write(p1.innerText)
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = '#0000ff'
+        corpo.style.background = 'black'
+        document.write('<br>' + p1.innerHTML)
     </script>
 </body>
 </html>

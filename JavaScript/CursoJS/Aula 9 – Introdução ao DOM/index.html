@@ -16,8 +16,10 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o <strong>resultado</strong></p>
     <P>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</P>
-    <div id="msg">Clique em mim</div>
-    <div name="nome">Por favor!</div>
+    <div id="msg">Clique em mim</div> <br>
+    <div name="nome">Por favor!</div> <br>
+    <div class="no">Não!</div> <br>
+    <div class="yes">por Seletor</div> <br>
 
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
@@ -39,6 +41,18 @@
 
         var c = window.document.getElementsByName('nome')[0]
         c.innerText = 'Assim...'
+
+        // 
+
+        var a = window.document.getElementsByClassName('no')[0]
+        a.innerHTML = 'Estou <br> <strong>Entendendo</strong>'
+
+        // 
+
+        var t = window.document.querySelector('div.yes')
+        t.innerHTML = '<em>Selecionando por seletor</em>'
+        t.style.background = 'blue'
+        t.style.color = 'black'
     </script>
 </body>
 </html>

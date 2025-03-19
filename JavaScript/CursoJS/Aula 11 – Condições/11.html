@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+</head>
+<body>
+    <h1>Registro de Estrangeiro</h1>
+    Em qual país você vive atualmente? <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var p = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = String(p.value)
+            res.innerHTML = `<p>Vivendo em ${vel}</p>`;
+            if (vel.toLowerCase() !== 'brasil') {
+                res.innerHTML += `<p>Você é Estrangeiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

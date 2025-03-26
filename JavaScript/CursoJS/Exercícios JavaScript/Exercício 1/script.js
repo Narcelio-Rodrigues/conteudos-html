@@ -1,10 +1,21 @@
-var agora = new Date()
-var hora = agora.getHours()
-console.log(`Agora são exatamente ${hora} horas.`)
-if (hora < 12) {
-    console.log('Bom Dia!')
-} else if (hora <= 18) {
-    console.log('Boa Tarde!')
-} else {
-    console.log('Boa Noite!')
+function carregar() {
+    var msg = window.document.getElementById ('msg')
+    var img = window.document.getElementById('imagem')
+    var data = new Date()
+    var hora = data.getHours()
+    msg.innerHTML = `Agora são ${hora} horas.`
+
+    if (hora >= 0 && hora < 12) {
+        // BOM DIA!
+        img.src = 'Img/manha.png'
+        document.body.style.background = '#e2cd9f'
+    } else if (hora >= 12 && hora < 18) {
+        // BOA TARDE!
+        img.src = 'Img/tarde.png'
+        document.body.style.background = '#b9846f'
+    } else {
+        // BOA NOITE!
+        img.src = 'Img/noite.png'
+        document.body.style.background = '#515154'
+    }
 }

@@ -51,4 +51,4 @@ do {
             window.alert('[ERRO] Opção inválida!')
             break;
     }
-} while (opcao ==! '3');
+} while (opcao !== '3');

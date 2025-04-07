@@ -1,5 +1,5 @@
 var opcao = window.prompt('Escolha uma opção: \n 1 - Digite um número aleatório \n 2 - Operações Matemáticas \n 3 - Sair')
-do {
+while (opcao !== '3') {
     switch (opcao) {
         case '1':
             var aleatorio = window.prompt('1 - Digite um número aleatório')
@@ -34,12 +34,14 @@ do {
             }
             break;
 
-        case '3':
-            window.alert('Saindo...')
-            break;
+        // case '3':
+        //     window.alert('Saindo...')
+        //     break;
 
         default:
             window.alert('[ERRO] Opção inválida!')
             break;
     }
-} while (opcao !== '3')
+    opcao = window.prompt('Escolha uma opção: \n 1 - Digite um número aleatório \n 2 - Operações Matemáticas \n 3 - Sair')
+}
+window.alert('Saindo...')

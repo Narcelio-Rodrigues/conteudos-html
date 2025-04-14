@@ -10,7 +10,7 @@ while (c <= 5) {
 // Executa o bloco PELO MENOS UMA VEZ, mesmo que a condição seja falsa, pois a verificação é feita depois.
 // Usar quando sempre precisa executar o código pelo menos uma vez, como em menus ou formulários que pedem dados.
 
-let c = 1
+let a = 1
 do {
     console.log(c)
     c++

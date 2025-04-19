@@ -1,6 +1,22 @@
 let frutas = ['maçã', 'banana', 'laranja']
 
-frutas [1] = 'goiaba'
+frutas[3] = 'goiaba'
+
+// organiza os elementos de um array em ordem alfabética ou numérica, dependendo do conteúdo
+console.log(frutas.sort())
+
+// Para ordem decrescente
+numeros.sort((a, b) => b - a)
+
+// Exemplo
+let notas = [7.5, 9.2, 5.3, 8.0]
+notas.sort((a, b) => a - b) // crescente
+console.log('Notas em ordem crescente:', notas)
+
+notas.sort((a, b) => b - a) // decrescente
+console.log('Notas em ordem decrescente:', notas)
+// 
+
 // push() – Adiciona um valor no final
 frutas.push('uva')
 
@@ -47,3 +63,25 @@ let letra = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n
 for (let i = 0; i < letra.length; i++) {
     console.log(`Índice ${i + 1}: Letra ${letra[i]}`)
 }
+
+// 
+let num = [5, 8, 2, 9, 3, 6, 4, 7]
+num.push(1)
+num.sort()
+console.log(num)
+console.log(`O valor tem ${num.length} posições`)
+console.log(`O primeiro valor do vetor é ${num[0]}`)
+
+for (let i = 0; i < num.length; i++) {
+    console.log(`A posição ${i} tem o valor ${num[i]}`)
+}
+
+// forma simplificada
+for (let i in num) {
+    console.log(num[i])
+}
+
+// 
+
+let pos = num.indexOf(9)
+console.log(`O valor 3 está na posição ${pos}`)
